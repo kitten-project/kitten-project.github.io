@@ -9,8 +9,8 @@
     <!-- anon-on -->
     <meta name="twitter:site" content="@GoogleAI" />
     <!-- anon-off -->
-    <meta name="twitter:title" content="KITTEN: A Knowledge-Intensive Evaluation of Image Generation on Visual Entities" />
-    <meta name="twitter:description" content="Recent advancements in text-to-image generation have significantly enhanced the quality of synthesized images. Despite this progress, evaluations predominantly focus on aesthetic appeal or alignment with text prompts. Consequently, there is limited understanding of whether these models can accurately represent a wide variety of realistic visual entities — a task requiring real-world knowledge. To address this gap, we propose a benchmark focused on evaluating Knowledge-InTensive image generaTion on real-world ENtities (i.e., KITTEN). Using KITTEN, we conduct a systematic study on the fidelity of entities in text-to-image generation models, focusing on their ability to generate a wide range of real-world visual entities, such as landmark buildings, aircraft, plants, and animals. We evaluate the latest text-to-image models and retrieval-augmented customization models using both automatic metrics and carefully-designed human evaluations, with an emphasis on the fidelity of entities in the generated images. Our findings reveal that even the most advanced text-to-image models often fail to generate entities with accurate visual details. Although retrieval-augmented models can enhance the fidelity of entity by incorporating reference images during testing, they often over-rely on these references and struggle to produce novel configurations of the entity as requested in creative text prompts." />
+    <meta name="twitter:title" content="KITTEN: A Knowledge-Integrated Evaluation of Image Generation on Visual Entities" />
+    <meta name="twitter:description" content="Recent advances in text-to-image generation have improved the quality of synthesized images, but evaluations mainly focus on aesthetics or alignment with text prompts. Thus, it remains unclear whether these models can accurately represent a wide variety of realistic visual entities. To bridge this gap, we propose Kitten, a benchmark for Knowledge-InTegrated image generaTion on real-world ENtities. Using Kitten, we conduct a systematic study of recent text-to-image models, retrieval-augmented models, and unified understanding and generation models, focusing on their ability to generate real-world visual entities such as landmarks and animals. Analyses using carefully designed human evaluations, automatic metrics, and MLLMs as judges show that even advanced text-to-image and unified models fail to generate accurate visual details of entities. While retrieval-augmented models improve entity fidelity by incorporating reference images, they tend to over-rely on them and struggle to create novel configurations of the entities in creative text prompts."/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 
       <h1 style="text-align: center;">
         <img src="assets/kitten.png" alt="Kitten" style="width: 64px; vertical-align: middle;">
-        <strong>KITTEN: A Knowledge-Intensive Evaluation of</strong>
+        <strong>KITTEN: A Knowledge-Integrated Evaluation of</strong>
       </h1>
       <h1 style="text-align: center;">
         <strong>Image Generation on Visual Entities</strong>
@@ -54,8 +54,8 @@
         </div>
         <br>
         <div class="row" style="display:inline">
-            <p style="display:inline"><a href="https://scholar.google.com/citations?user=GiCqMFkAAAAJ&hl=en">Ming-Wei Chang</a><sup>1</sup></p>&nbsp;&nbsp;&nbsp;&nbsp;
-            <p style="display:inline"><a href="https://scholar.google.com/citations?user=vO0VSSYAAAAJ&hl=en">Xuhui Jia</a><sup>1</sup></p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p style="display:inline"><a href="https://mingweichang.org/">Ming-Wei Chang</a><sup>1</sup></p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p style="display:inline"><a href="https://scholar.google.com/citations?user=my-RGdcAAAAJ&hl=en">Xuhui Jia</a><sup>1</sup></p>&nbsp;&nbsp;&nbsp;&nbsp;
             <p style="display:inline"><a href="https://ckkelvinchan.github.io/">Kelvin C.K. Chan</a><sup>1</sup></p>&nbsp;&nbsp;&nbsp;&nbsp;
             <p style="display:inline"> <a href="https://www.hexianghu.com/">Hexiang Hu</a><sup>1</sup></p>&nbsp;&nbsp;&nbsp;&nbsp;
             <p style="display:inline"><a href="https://sammy-su.github.io/">Yu-Chuan Su</a><sup>1</sup></p>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -63,7 +63,7 @@
         </div>
         <br>
         <div class="row mt-2">
-          <div class="col text-small">*: Core Contribution</div>
+          <div class="col text-small">*: Equal Contribution</div>
         </div>
         <br>
         <div class="row mt-2" style="display:inline">
@@ -86,11 +86,11 @@
     <div class="abstract">
       <div class="inside">
         <p class="text">
-          Recent advancements in text-to-image generation have significantly enhanced the quality of synthesized images. Despite this progress, evaluations predominantly focus on aesthetic appeal or alignment with text prompts. Consequently, there is limited understanding of whether these models can accurately represent a wide variety of realistic visual entities — a task requiring real-world knowledge. To address this gap, we propose a benchmark focused on evaluating Knowledge-InTensive image generaTion on real-world ENtities (i.e., KITTEN). Using KITTEN, we conduct a systematic study on the fidelity of entities in text-to-image generation models, focusing on their ability to generate a wide range of real-world visual entities, such as landmark buildings, aircraft, plants, and animals. We evaluate the latest text-to-image models and retrieval-augmented customization models using both automatic metrics and carefully designed human evaluations, with an emphasis on the fidelity of entities in the generated images. Our findings reveal that even the most advanced text-to-image models often fail to generate entities with accurate visual details. Although retrieval-augmented models can enhance the fidelity of entities by incorporating reference images during testing, they often over-rely on these references and struggle to produce novel configurations of the entity as requested in creative text prompts.
+          Recent advances in text-to-image generation have improved the quality of synthesized images, but evaluations mainly focus on aesthetics or alignment with text prompts. Thus, it remains unclear whether these models can accurately represent a wide variety of realistic visual entities. To bridge this gap, we propose Kitten, a benchmark for Knowledge-InTegrated image generaTion on real-world ENtities. Using Kitten, we conduct a systematic study of recent text-to-image models, retrieval-augmented models, and unified understanding and generation models, focusing on their ability to generate real-world visual entities such as landmarks and animals. Analyses using carefully designed human evaluations, automatic metrics, and MLLMs as judges show that even advanced text-to-image and unified models fail to generate accurate visual details of entities. While retrieval-augmented models improve entity fidelity by incorporating reference images, they tend to over-rely on them and struggle to create novel configurations of the entities in creative text prompts.
         </p>
         <!-- anon-on -->
-        <a class="read-paper" href="https://arxiv.org/abs/2410.11824" target="_blank"><button>arXiv</button></a>
-        <a class="read-paper" href="" target="_blank"><button>Dataset (TBD)</button></a>
+        <a class="read-paper" href="https://openreview.net/pdf?id=wejaKS9Ps0" target="_blank"><button>Paper</button></a>
+        <a class="read-paper" href="https://github.com/hhsinping/kitten" target="_blank"><button>Dataset</button></a>
         <a class="dataset" href="https://open-vision-language.github.io/oven/", style="_blank"><button>Prior Work: OVEN</button></a>
         <!-- anon-off -->
       </div>
@@ -106,10 +106,10 @@
       <img src="assets/fig1.png" class="figure_image">
     </div>
 
-      
+        
     <div class="header_dark_gray text-center">
       <h2>We construct the KITTEN benchmark using real-world entities across eight domains.</h2>
-      <h5>For each selected entity, we create four types of image-generation prompts.</h5>
+      <h5>For each selected entity, we define five evaluation tasks of image-generation prompts incorporating the entity.</h5>
       <h5>A support set and an evaluation set of entity images are collected to assess the fidelity of the generated entities.</h5>
     </div>
     <div class="row mt-4 mb-4">
@@ -118,25 +118,26 @@
 
 
     <div class="header_dark_gray text-center">
-      <h2>We evaluate the latest text-to-image models and retrieval-augmented models.</h2>
-      <h5>using both carefully designed human evaluations (top) and automatic metrics (bottom),</h5>
+      <h2>We evaluate the latest text-to-image models, retrieval-augmented models, and unified models.</h2>
+      <h5>We use carefully designed human evaluations (top left), automatic metrics (top right), and MLLMs as judges (bottom)</h5>
       <h5>placing an emphasis on faithfulness to the entities and the ability to follow instructions.</h5>
     </div>
-    <div class="row mt-2 mb-2">
-      <img src="assets/fig3.png" class="figure_image2">
+    <div class="row mt-4 mb-4">
+      <img src="assets/fig3.png" class="figure_image">
+    </div>
+    <div class="row mt-4 mb-4">
+      <img src="assets/fig3-2.png" class="figure_image">
     </div>
 
     <div class="header_dark_gray text-center">
       <h2>Our results illustrate the trade-off between faithfulness to entities and instruction-following in current models.</h2>
-      <h5>The backbone text-to-image models still exhibit a significant gap in generating faithful representations of entities.</h5>
+      <h5>The backbone text-to-image models and unified models still exhibit a significant gap in generating faithful representations of entities.</h5>
       <h5>While retrieval-augmented methods enhance faithfulness, they often struggle with creative prompts.</h5>
       <h5>Our study underscores the need for techniques that improve the fidelity of entities without sacrificing the ability to follow instructions.</h5>
     </div>
     <div class="row mt-2 mb-2">
-          <img src="assets/fig4.png" class="figure_image3">
-          <img src="assets/fig5.png" class="figure_image3">
-          <img src="assets/fig6.png" class="figure_image3">
-          <img src="assets/fig7.png" class="figure_image3">
+          <img src="assets/fig4-1.png" class="figure_image3">
+          <img src="assets/fig4-2.png" class="figure_image3">
     </div>
 
 <!-- anon-on -->
@@ -147,14 +148,14 @@
   <div class="inside">
     <pre>
       <code>
-      @article{huang2024kitten,
-        title={KITTEN: A Knowledge-Intensive Evaluation of Image Generation on Visual Entities},
-        author={Huang, Hsin-Ping and Wang, Xinyi and Bitton, Yonatan and Taitelbaum, Hagai and 
-          Tomar, Gaurav Singh and Chang, Ming-Wei and Jia, Xuhui and Chan, Kelvin C.K. and 
-          Hu, Hexiang and Su, Yu-Chuan and Yang, Ming-Hsuan},                
-        journal={arXiv preprint arXiv:2410.11824},
-        year={2024},
-      }
+        @article{huang_2026_kitten,
+          title = {{KITTEN}: A Knowledge-Integrated Evaluation of Image Generation on Visual Entities},
+          author={Huang, Hsin-Ping and Wang, Xinyi and Bitton, Yonatan and Taitelbaum, Hagai and 
+            Tomar, Gaurav Singh and Chang, Ming-Wei and Jia, Xuhui and Chan, Kelvin C.K. and 
+            Hu, Hexiang and Su, Yu-Chuan and Yang, Ming-Hsuan},
+          journal={Transactions on Machine Learning Research},
+          year={2026}
+        }
       </code>
     </pre>
   </div>
